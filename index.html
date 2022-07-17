@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link
+      rel="stylesheet"
+      href="./css/styles.css
+    "
+    />
+    <script defer src="js/fetchPersonajes.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="contenedorHeader">
+        <div id="logo"><img src="/media/logo.png" alt="" /></div>
+        <nav id="navegador">
+          <ul>
+            <li><button class="botonNavegacion">Personajes</button></li>
+            <li><button class="botonNavegacion">Episodios</button></li>
+            <li><button class="botonNavegacion">Lugares</button></li>
+          </ul>
+        </nav>
+        <div id="contenedorBuscar">
+          <form>
+            <label for="buscar"></label>
+            <input
+              type="text"
+              name="buscar"
+              id="busqueda"
+              placeholder="EJ: Morty"
+            />
+            <button><img src="/media/lupa.png" alt="lupa" /></button>
+          </form>
+        </div>
+      </header>
+      <main id="contenedorMain">
+        <div id="contenedorMainSecction">
+          <section id="seccionPersonaje" class="seccion">
+            <h2 class="titulosSecciones">Personajes</h2>
+            <article
+              class="contenedorArticulos"
+              id="contenedorArticulos"
+            ></article>
+            <div>
+              <button
+                id="anteriorPersonajes"
+                class="botonesPaginacionPersonajes"
+              >
+                Pagina anterior
+              </button>
+              <button
+                id="siguientesPersonajes"
+                class="botonesPaginacionPersonajes"
+              >
+                Siguiente pagina
+              </button>
+            </div>
+          </section>
+          <section id="seccionEpisodio" class="seccion">
+            <h2 class="titulosSecciones">Personajes</h2>
+            <article
+              class="contenedorArticulos"
+              id="contenedorArticulos"
+            ></article>
+          </section>
+          <section id="seccionLugares" class="seccion">
+            <h2 class="titulosSecciones">Personajes</h2>
+            <article
+              class="contenedorArticulos"
+              id="contenedorArticulos"
+            ></article>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

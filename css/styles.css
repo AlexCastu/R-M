@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../media/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+#contenedorHeader {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+    align-items: center;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    z-index: 100;
+
+}
+
+#logo img {
+    object-fit: cover;
+    width: 125px;
+}
+
+#navegador ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.botonNavegacion {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    outline: none;
+    padding: 2px;
+
+}
+
+.botonNavegacion:hover {
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+#contenedorBuscar form {
+    display: flex;
+}
+
+#contenedorBuscar form input,
+button {
+    border: none;
+    background-color: white;
+    padding: 1px 5px;
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+
+#contenedorBuscar form button {
+
+    margin-right: 10px;
+}
+
+#contenedorBuscar form button img {
+    width: 25px;
+
+}
+
+#contenedorBuscar form button:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.seccion {
+    height: 100vh;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+
+}
+
+#seccionPersonaje {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#seccionPersonaje article {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+
+
+}
+
+
+#contenedorMain {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#contenedorMainSecction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulosSecciones {
+    margin-top: 10px;
+    width: 40%;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.contenedorArticulos {
+    width: 100%;
+    display: flex;
+}
+
+.cardPersonajess {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 650px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.cardPersonajess img {
+    width: 200px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.datosPersonajes {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+
+.botonesPaginacionPersonajes {
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
