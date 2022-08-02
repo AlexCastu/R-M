@@ -4,15 +4,13 @@
 }
 
 #wrapper {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../media/fondo.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    /* Created with https://www.css-gradient.com */
+    background-color: #212F3D;
     width: 100%;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: sans-serif;
 }
 
@@ -23,11 +21,10 @@
     justify-content: space-between;
     padding: 5px 0px;
     align-items: center;
-    position: absolute;
     height: 50px;
     width: 100%;
     z-index: 100;
-
+    box-shadow: 0px 0px 15px gray;
 }
 
 #logo img {
@@ -51,7 +48,6 @@
 }
 
 .botonNavegacion:hover {
-    border-bottom: 1px solid gray;
     cursor: pointer;
 }
 
@@ -83,21 +79,14 @@ button {
     cursor: pointer;
 }
 
-.seccion {
-    height: 100vh;
-    flex-direction: column;
-    display: none;
-    align-items: center;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
 
-
-}
 
 #seccionPersonaje {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 #seccionPersonaje article {
@@ -107,22 +96,20 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 30px;
-
+    gap: 40px;
 
 }
 
 
-#contenedorMain {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-}
+
 
 #contenedorMainSecction {
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -134,22 +121,29 @@ button {
     padding: 10px 0px;
     margin-top: 10px;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
+
 }
 
 .contenedorArticulos {
     width: 100%;
     display: flex;
+
 }
 
 .cardPersonajess {
-    background-color: rgb(241, 241, 241);
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     min-width: 500px;
     max-width: 650px;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    box-shadow: 5px 5px 20px #17202A;
+    color: lightgray;
+}
+
+.cardPersonajess:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .cardPersonajess img {
@@ -158,10 +152,11 @@ button {
 }
 
 .datosPersonajes {
-    background-color: rgb(230, 230, 230);
+    background-color: #5D6D7E;
     padding: 5px;
     border-radius: 0px 10px 10px 0px;
     width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -174,4 +169,28 @@ button {
     border-radius: 10px;
     margin-bottom: 50px;
     cursor: pointer;
+}
+
+#divBotonesPersonajes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.308);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 0px;
+    width: 100%;
+    justify-content: center;
+}
+
+#divBotonesPersonajes>button {
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid lightgray;
+}
+
+#divBotonesPersonajes>button:hover {
+    cursor: pointer;
+    border: 1px solid black;
 }
