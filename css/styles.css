@@ -65,18 +65,14 @@ button {
 }
 
 #contenedorBuscar form button {
-
     margin-right: 10px;
+    cursor: default;
+
 }
 
 #contenedorBuscar form button img {
     width: 25px;
 
-}
-
-#contenedorBuscar form button:hover {
-    background-color: rgb(240, 240, 240);
-    cursor: pointer;
 }
 
 
@@ -135,9 +131,10 @@ button {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    min-width: 500px;
+    width: 95%;
+
     max-width: 650px;
-    box-shadow: 5px 5px 20px #17202A;
+    box-shadow: 5px 5px 20px #1a1a1a;
     color: lightgray;
 }
 
@@ -193,4 +190,144 @@ button {
 #divBotonesPersonajes>button:hover {
     cursor: pointer;
     border: 1px solid black;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.644);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+    margin-block-end: 50px;
+}
+
+#modal>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 20px;
+    margin-top: 150px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+}
+
+
+
+.divAtributos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    white-space: inherit;
+    max-width: 550px;
+    width: 40%;
+    border: 1px solid lightgray;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 3px 4px 10px rgb(185, 185, 185);
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+#botonSalirModal {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+}
+
+#botonSalirModal img {
+    width: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#botonSalirModal img:hover {
+    box-shadow: 0px 0px 10px 5px white;
+}
+
+.titulosPersonajes {
+    font-size: small;
+    color: gray;
+    padding-bottom: 7px;
+
+}
+
+#ContendedorPersonajeIMG {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+#ContendedorPersonajeIMG img {
+    border-radius: 50%;
+    width: 250px;
+    box-shadow: 0px 5px 20px gray;
+    margin: auto;
+}
+
+.DatosPersonajes {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+
+
+.divEpisodios {
+    width: 90%;
+    border: 1px solid lightgray;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 3px 4px 10px rgb(185, 185, 185);
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+#contenedorEpisodios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+
+.cadaEpisodio {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    width: 45%;
+    padding: 5px;
+    min-width: 200px
+}
+
+.cadaEpisodio div {
+    display: flex;
+    flex-direction: row;
+}
+
+.titulosEpisodios {
+    font-size: small;
+    color: gray;
+    padding-bottom: 4px;
+}
+
+.descripEpisodio {
+    margin-left: 15px;
+    font-size: smaller;
 }
