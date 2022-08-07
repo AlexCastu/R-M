@@ -3,15 +3,26 @@
     padding: 0;
 }
 
+
+
 #wrapper {
-    /* Created with https://www.css-gradient.com */
     background-color: #212F3D;
     width: 100%;
-
+    background-image: url('../media/fondo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
+}
+
+.blur {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    width: 100%;
 }
 
 #contenedorHeader {
@@ -132,10 +143,10 @@ button {
     flex-direction: row;
     border-radius: 10px;
     width: 95%;
-
-    max-width: 650px;
-    box-shadow: 5px 5px 20px #1a1a1a;
+    max-width: 550px;
+    box-shadow: 5px 5px 120px #000000;
     color: lightgray;
+    border: 1px solid black;
 }
 
 .cardPersonajess:hover {
@@ -222,8 +233,6 @@ button {
     overflow-y: auto;
 }
 
-
-
 .divAtributos {
     display: flex;
     flex-direction: column;
@@ -303,7 +312,7 @@ button {
     gap: 10px;
     justify-content: space-around;
     align-items: stretch;
-
+    align-items: stretch;
 }
 
 .cadaEpisodio {
@@ -311,14 +320,16 @@ button {
     flex-direction: column;
     border: 1px solid lightgray;
     box-shadow: 0px 0px 10px rgb(180, 180, 180);
-    width: 45%;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 25%;
     padding: 5px;
     min-width: 200px
 }
 
 .cadaEpisodio div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .titulosEpisodios {

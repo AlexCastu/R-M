@@ -5,6 +5,11 @@ let paginaPrev = 0;
 let datos = [];
 let datosParaBusqueda = [];
 
+window.addEventListener('load', () => {
+  document.getElementById('loading').style.display = 'none';
+});
+//Ocultamos en loading una vez que la pagina ah cargado
+
 const incicio = document.getElementById('paginaInicio');
 const personajes = document.getElementById('seccionPersonaje');
 const episodios = document.getElementById('seccionEpisodio');
@@ -64,7 +69,7 @@ const mostrarPeronajes = () => {
 const construirCard = (personaje) => {
   const card = document.createElement('div');
   card.id = personaje.id;
-  card.className = 'cardPersonajess';
+  card.className = 'cardPersonajess ';
   const titulo = document.createElement('h1');
   const imagen = document.createElement('img');
 
